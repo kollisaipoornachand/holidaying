@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<meta charset = "UTF-8">
+<title> holidaying </title>
+<head>
+<script>
+function stringsep()
+{
+var main_str = document.getElementById("OB").value;
+var len = main_str.length;
+var str_even = "";
+var str_odd = "";
+var i=0;
+str_even = str_even + 'a';
+for(i;i<len;i++)
+{
+if(i%2==0)
+str_odd = str_odd + main_str[i];
+else
+str_even = str_even + main_str[i];
+}
+str_final = str_odd + str_even;
+document.getElementById("out").innerHTML = str_final;
+alert(str_odd);
+}
+</script>
+</head>
+<body bgcolor="pink">
+<p align="center">
+<strong>ENTER THE HOTEL NAME</strong></p>
+<div>
+ <div>
+<p align="center">
+ <input type="test" id="OB"></p>
+ </div>
+ <div>
+<p align="center">
+ <input type = "submit" onclick="stringsep()"></p>
+ </div>
+ <div>
+<p align="center">
+<strong>OUTPUT</strong></p>
+ <p align="center" id="out"><h4> </h4> </p>
+ </div>
+</body>
+</html>>
